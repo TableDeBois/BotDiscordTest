@@ -1,4 +1,8 @@
-class game{
+module.exports =class game{
+  /**
+   * 
+   * @param {String} player 
+   */
   constructor(player){
     this.player = player;
   }
@@ -13,14 +17,7 @@ class game{
 
   showPlayer(){
     console.log(this.player);
-  }
-
-}
-
-module.exports = {
-
-  showPlayer(){
-    console.log(this.player);
+    return this.player;
   }
 
 }
