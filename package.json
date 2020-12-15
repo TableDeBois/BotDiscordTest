@@ -1,0 +1,23 @@
+{
+  "name": "botdiscordtest",
+  "version": "0.1.0",
+  "description": "a little test for a discord bot",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TableDeBois/BotDiscordTest.git"
+  },
+  "author": "Victor Bultez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TableDeBois/BotDiscordTest/issues"
+  },
+  "homepage": "https://github.com/TableDeBois/BotDiscordTest#readme"
+}
