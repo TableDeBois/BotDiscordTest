@@ -17,7 +17,7 @@ client.on('message', msg => {
   if(msg.content === 'jouer'){
     msg.channel.send(msg.member.nickname + ' est en train de jouer');
     let jeu = new game(msg.member.nickname);
-    msg.channel.send('Le joueur est bien : ' +jeu.showPlayer);
+    msg.channel.send(`Le joueur est bien :  ${jeu.showPlayer()}`);
   }
 });
 

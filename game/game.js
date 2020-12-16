@@ -1,6 +1,8 @@
 module.exports =class game{
+  
+  #ennemi;
+
   /**
-   * 
    * @param {String} player 
    */
   constructor(player){
@@ -16,8 +18,8 @@ module.exports =class game{
   }
 
   showPlayer(){
-    console.log(this.player);
+    console.log('joueur qui a utilisé la commande : ' +this.player);
     return this.player;
   }
 
-}
+};

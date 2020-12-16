@@ -6,9 +6,14 @@
   "dependencies": {
     "discord.js": "^12.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-aqua": "^7.3.0"
+  },
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "watch": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
