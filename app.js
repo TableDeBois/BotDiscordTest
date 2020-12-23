@@ -19,6 +19,14 @@ client.on('message', msg => {
     let jeu = new game(msg.member.nickname);
     msg.channel.send(`Le joueur est bien :  ${jeu.showPlayer()}`);
   }
+
+  if(msg.content === '!jeu'){
+    msg.channel.send(msg.member.nickname + ' est en train de jouer');
+    let jeu = new game(msg.member.nickname);
+    msg.channel.send(`test de la commande : test of msg in class game`);
+    jeu.testCommand(client)
+  }
+
 });
 
 

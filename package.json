@@ -4,7 +4,8 @@
   "description": "a little test for a discord bot",
   "main": "app.js",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^7.15.0",

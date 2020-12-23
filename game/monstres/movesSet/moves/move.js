@@ -12,4 +12,16 @@ module.exports = class move{
     this.prec=prec;
   }
 
+  getType(){
+    return move.type;
+  }
+
+  getPower(){
+    return move.power;
+  }
+
+  getPrec(){
+    return move.prec;
+  }
+
 }

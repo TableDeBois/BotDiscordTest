@@ -1,4 +1,5 @@
 const moveSet = require ('./game/monstres/movesSet/moveSet.js');
+const moveSet = require('./movesSet/moveSet.js');
 
 module.exports = class monstre{
 
@@ -10,9 +11,10 @@ module.exports = class monstre{
    * @param {Number} def 
    * @param {Number} defspe 
    * @param {Number} speed 
-   * @param {String} type 
+   * @param {String} type
+   * @param {moveSet} moveSet 
    */
-  constructor(hp,att,attSpe,def,defspe,speed,type,name){
+  constructor(hp,att,attSpe,def,defspe,speed,type,name,moveSet){
     if(this.constructor === monstre){
       throw new TypeError('Abstract class "Monstre" cannot be instantiated directly');
     }
@@ -25,6 +27,7 @@ module.exports = class monstre{
     this.type=type;
     this.name=name;
     this.IsDead=false;
+    this.moveSet = moveSet;
   }
 
   gethp(){

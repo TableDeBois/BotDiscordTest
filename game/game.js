@@ -17,6 +17,14 @@ module.exports =class game{
     //todo...
   }
 
+  testCommand(client){
+    client.on('message',msg =>{
+      if(msg.content === '!test'){
+        msg.channel.send(msg.member.nickname + ' a utilisé la commande test');
+      }
+    })
+  }
+
   showPlayer(){
     console.log('joueur qui a utilisé la commande : ' +this.player);
     return this.player;

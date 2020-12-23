@@ -16,4 +16,12 @@ module.exports = class moveSet{
     return this.set;
   }
 
+  /**
+   * 
+   * @param {number} indice 
+   */
+  getMoveByI(indice){
+    return set[indice];
+  }
+
 }
